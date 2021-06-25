@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
 * {
     font-family: 'Roboto', sans-serif;
     margin: 0px auto;
@@ -57,7 +59,8 @@ header {
 
 .witruimte {
     height: 62px;
-    width: 1025px;
+    width: 100vw;
+    float: left;
 }
 
 /* Begin Nav... */
@@ -145,6 +148,13 @@ padding-top: 12%;
 overflow: hidden;
 }
 
+#linkerhelft2{
+  width: 39%;
+  float: left;
+  padding-top: 12%; 
+  overflow: hidden;
+  }
+
 
 /*text in header*/
 
@@ -161,17 +171,558 @@ overflow: hidden;
 #header-txt2{
     font-size: 150px;
     font-weight: 500;
+    margin-left: 12.2%;
+    color: #ffffff;
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: #28313E;
+}
+
+#header-txt3{
+    font-size: 250px;
+    font-weight: 500;
+    margin-top: 25%;
     text-align: center;
     color: #ffffff;
     -webkit-text-stroke-width: 5px;
     -webkit-text-stroke-color: #28313E;
 }
 
+#header-txt4{
+  font-size: 150px;
+  font-weight: 500;
+  margin-top: 25%;
+  text-align: center;
+  color: #ffffff;
+  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: #28313E;
+}
+
+#header-txt5{
+  font-size: 130px;
+  font-weight: 500;
+  margin-top: 25%;
+  text-align: center;
+  color: #ffffff;
+  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: #28313E;
+}
+
+#header-txt6{
+  font-size: 200px;
+  font-weight: 500;
+  margin-top: 25%;
+  text-align: center;
+  color: #ffffff;
+  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: #28313E;
+}
+
+#header-txt7{
+  font-size: 75px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: -110px;
+  color: #ffffff;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #28313E;
+}
+
+
+/*button*/
+#btnwork{
+    height: 50px;
+    width: 140px;
+    font-size: 20px;
+    color: #ffffff;
+    border: 0;
+    background: #3D4550;
+    margin-left: 12.2%;
+}
+
+#btnwork:hover{
+    background: #28313E;
+}
+
 /*zwarte lijn*/
 .black-line{
-    height: 2.5%;
+    height: 4%;
     width: 100%;
     background-color: #28313E;
     bottom: 0;
     position: absolute;
+}
+
+
+.black-line2{
+    height: 50px;
+    width: 100%;
+    background-color: #28313E;
+    clear: both;
+}
+
+/*onderwerpen*/
+.article{
+    width: 100%;
+    float: left;
+    height: 95vh; 
+    overflow: hidden;
+}
+
+/*grote text*/
+#title-txt{
+    font-size: 220px;
+    font-weight: 500;
+    text-align: center;
+    color: #ffffff;
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: #28313E;
+}
+
+/*kleinere text*/
+#title-txt2{
+    font-size: 150px;
+    font-weight: 500;
+    text-align: left;
+    margin-left: 6.1%;
+    color: #ffffff;
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: #28313E;
+}
+
+/*info*/
+
+.vtext{
+    color: #ffffff;
+}
+
+.info{
+    height: 530px;
+    width: 22%;
+    margin-left: 5%;
+    float: left;
+  }
+  
+.info-txt{
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align:justify;
+    margin-left: 5%;
+}
+
+.info-txt-link{
+  font-size: 20px;
+  font-weight: 400;
+  color: #F02D3A;
+  text-decoration: underline;
+}
+
+/*Projecten*/
+.flex-container {
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-between;
+    padding: 2.5%;
+    align-items:flex-end;
+  }
+  
+  .flex-item {
+   /*background: #ffffff;*/
+    /*border: 1px solid #000000;*/
+    border-radius: 30px;
+    padding: 50px;
+    width: 200px;
+    height: 150px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .flex-img{
+    width: 200px;
+    height: 150px;
+  }
+
+  .flex-img5{
+    height: 150px;
+  }
+
+  /*over mij*/
+
+  #about{
+    height: 530px;
+    width: 50%;
+  }
+
+  #about-txt{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  /* naar boven button*/
+  #myBtn{
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 50vw;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #F02D3A;
+    color: white;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+
+  #myBtn:hover{
+    background-color: #555;
+  }
+
+  /*stylescapes*/
+  #stylescape-container {
+    width: 60%;
+    float: right;
+    margin-bottom: 500px;
+  }
+  
+ .stylescape {
+    float: left;
+  }
+
+  .stylescape-img{
+    width: 800px;
+  }
+
+
+  /*Logo*/
+#flex-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column wrap;
+    align-content: flex-start;
+    width: 40%;
+    height: 900px;
+    margin-left: 50%;
+    position: absolute;
+    margin-top: -200px; 
+  }
+  
+  .flex-item2 {
+    border: 1px solid #000000;
+    border-radius: 30px;
+    text-align: center;
+    width: 300px;
+    height: 200px;
+    margin: 24px;
+  }
+
+  .flex-img2{
+    border-radius: 30px;
+  }
+
+
+  /*insta posts*/
+#flex-container3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column wrap;
+    align-content: flex-start;
+    width: 40%;
+    height: 900px;
+    margin-left: 50%;
+    position: absolute;
+  }
+  
+  .flex-item3 {
+   /* border: 1px solid #000000; */
+    border-radius: 30px;
+    text-align: center;
+    width: 250px;
+    height: 325px;
+    margin: 24px;
+  }
+
+  .flex-img3{
+    border-radius: 30px;
+  }
+
+/*Posters*/
+  #flex-container4 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column wrap;
+    align-content: flex-start;
+    width: 40%;
+    height: 1100px;
+    margin-left: 50%;
+    position: absolute;
+    margin-top: 0px; 
+  }
+  
+  .flex-item4 {
+   /* border: 1px solid #000000;*/
+    border-radius: 30px;
+    text-align: center;
+    width: 200px;
+    height: 300px;
+    margin: 24px;
+  }
+
+  .flex-img4{
+    border-radius: 0px;
+  }
+
+/*3d frietjes*/
+#frietjes-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column wrap;
+    align-content: flex-start;
+    width: 40%;
+    height: 900px;
+    margin-left: 50%;
+    position: absolute;
+    margin-top: -50px; 
+  }
+  
+  .frietjes {
+    /*border: 1px solid #000000; */
+    border-radius: 30px;
+    text-align: center;
+    width: 385px;
+    height: 252px;
+    margin: 24px;
+  }
+
+  .frietjes-img{
+    border-radius: 30px;
+  }
+
+  /*hamburger*/
+  #hamburger-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column wrap;
+    align-content: flex-start;
+    width: 90%;
+    height: 600px;
+    margin-left: 50%;
+    position: absolute;
+    margin-top: -50px; 
+  }
+  
+  .hamburger {
+    /*border: 1px solid #000000; */
+    border-radius: 30px;
+    text-align: center;
+    width: 385px;
+    height: 252px;
+    margin: 24px;
+  }
+
+  .flex-space {
+    /*border: 1px solid #000000; */
+    border-radius: 30px;
+    text-align: center;
+    width: 385px;
+    height: 130px;
+    margin: 0px;
+  }
+
+  .hamburger-img{
+    border-radius: 30px;
+  }
+
+  /*3d modellen enkel*/
+.model-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column wrap;
+    align-content: flex-start;
+    width: 40%;
+    height: 300px;
+    margin-left: 50%;
+    position: absolute;
+    margin-top: 100px; 
+  }
+  
+  .model {
+    /*border: 1px solid #000000; */
+    border-radius: 30px;
+    text-align: center;
+    width: 385px;
+    height: 252px;
+    margin: 24px;
+  }
+
+  .model-img{
+    border-radius: 30px;
+  }
+
+
+/*leeruitkomsten*/
+#lu-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column wrap;
+  align-content: flex-start;
+  width: 40%;
+  height: 900px;
+  margin-left: 10.5%;
+  margin-top: -200px; 
+}
+
+.lu-item {
+  background-color: #F02D3A;
+  border: 1px solid #28313E;
+  border-radius: 30px;
+  text-align: center;
+  width: 300px;
+  height: 200px;
+  margin: 90px;
+}
+
+.lu-item:hover{
+  background-color: #D20F1C;
+}
+
+.lu-img{
+  border-radius: 30px;
+}
+
+.lutitle{
+  margin-top: 80px;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #28313E;
+}
+
+.lu{
+  height: 530px;
+  width: 50%;
+}
+
+.lutxt{
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* text links*/
+.linktxt{
+  color: #F02D3A;
+}
+
+/*sprint 2*/
+
+#app-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column wrap;
+    align-content: flex-start;
+    width: 40%;
+    height: 500px;
+    margin-left: 50%;
+    position: absolute;
+}
+
+.app-img{
+  height: 120%;
+  border-radius: 30px;
+}
+
+.video-container{
+  width: 1000px;
+  height: 339px;
+  float: right;
+  margin-right: 100px;
+}
+
+.header-img4 {
+  margin-left: 10%;
+  margin-top: -75px;
+  width: 80%;
+  height: 80%;
+}
+
+
+
+  /* ander scherm*/
+  @media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+
+    #linkerhelft{
+      width: 39%;
+      float: left;
+      padding-top: 12%; 
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+    }
+
+    #linkerhelft2{
+        width: 39%;
+        float: left;
+        padding-top: 0.5%; 
+        overflow: hidden;
+    }
+
+    #frietjes-container {
+        margin-top: -250px; 
+    }
+
+    #hamburger-container {
+        margin-left: 40%;
+        position: absolute;
+        margin-top: 30px; 
+    }
+
+    .header-img2 {
+      width: 90%;
+      height: 90%;
+    }
+
+    .header-img3 {
+      margin-top: 120px;
+      width: 100%;
+      height: 100%;
+    }
+
+    .header-img4 {
+      margin-top: -75px;
+      width: 80%;
+      height: 80%;
+    }
+
+    #lu-container {
+      display: flex;
+      flex-wrap: wrap;
+      flex-flow: column wrap;
+      align-content: flex-start;
+      width: 40%;
+      height: 900px;
+      margin-left: 5%;
+      margin-top: -200px; 
+    }
+    
+    .lu-item {
+      background-color: #F02D3A;
+      border: 1px solid #28313E;
+      border-radius: 30px;
+      text-align: center;
+      width: 300px;
+      height: 200px;
+      margin: 70px;
+    }
 }

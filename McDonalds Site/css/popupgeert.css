@@ -1,0 +1,41 @@
+.modal_container{
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    max-width: 100%;
+}
+
+.modal_container.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal{
+    background-color: white;
+    border-radius: 5px;
+    padding: 30px 50px;
+    width: 600px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+.closepopup{
+    background-color: #47a386;
+    border: 0;
+    border: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 25px;
+}

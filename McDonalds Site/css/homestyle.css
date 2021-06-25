@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900i&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.text{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size:120px;
+    margin: 25px;
+      letter-spacing:0.1em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 
+                          0px 0px white,
+                          8px 8px #FFC300,
+                          16px 16px #000000;
+}
+
+.container{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.imagecontainer{
+    background-color: #cccccc; /* Used if the image is unavailable */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-radius: 25px;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.mcmenu, .mcpodcast, .berichten{
+    height: 300px;
+    box-shadow: 0px 0px 8px 1px #888
+}
+
+.mcmenu{
+    transition: all .3s linear; 
+    transform: rotate(345deg);
+    position: relative;
+    top: 30px;
+}
+
+.mcpodcast {
+    transition: all .3s linear; 
+}
+
+.berichten{
+    transition: all .3s linear; 
+    transform: rotate(15deg);
+    position: relative;
+    top: 30px;
+}
+
+.mcmenu:hover, .mcpodcast:hover, .berichten:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 8px 5px #888
+}
+
+.mcmenu:hover, .berichten:hover{
+    top: 0px;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 60px;
+}
+
+.fa-info-circle{
+    font-size: 25px;
+    transition: all .3s ease-in-out; 
+}
+
+.fa-info-circle:hover{
+    color: white;
+    transform: scale(1.1);
+}
+
+.artboardkaart{
+    position: relative;
+}
+
+.modal_container{
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    max-width: 100%;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.modal_container.show{
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.modal{
+    background-color: white;
+    border-radius: 5px;
+    padding: 30px 50px;
+    width: 600px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+.close{
+    background-color: #FFC300;
+    border: 0;
+    border: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 25px;
+    transition: all .3s ease-in-out; 
+    font-size: 20px;
+}
+
+.close:hover{
+    background-color: #47a386;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+

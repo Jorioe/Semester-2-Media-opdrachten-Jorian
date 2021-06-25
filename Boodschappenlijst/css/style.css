@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+main {
+    width: 90vw;
+    padding: 1vh 2vw;
+}
+
+#groceriesFields {
+    margin-bottom: 20px;
+}
+
+#grocerie {
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    border: 1px solid #000;
+    border-radius: 24px;
+    width: 300px;
+}
+
+#add {
+    padding: 10px;
+    background: #eeb717;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    border: 1px solid #000;
+    cursor: pointer;
+    color: #000;
+    border-radius: 15px;
+}
+
+#add:hover {
+    background: #fff;
+    transition: background 0.2s;
+}
+
+#groceries {
+    list-style-type: none;
+    max-width: 320px;
+    background: #fff;
+    border-radius: 15px;
+    border: 1px solid #000;
+    margin-bottom: 10px;
+}
+
+#groceries li {
+    padding: 14px 14px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid #eeb717;
+}
+#groceries li:last-child {
+    border: none;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+#groceries li:nth-child(even) {
+    background: #eeb81789;
+}
+
+#remove {
+    padding: 10px;
+    background: #FF0408;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+}
+
+#remove:hover {
+    background: #eeb717;
+    color: #000;
+    transition: all 0.2s;
+}

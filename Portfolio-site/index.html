@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+   
     <link rel="icon" type="image/png" href="img/logoJB.png" />
     <link rel="stylesheet" type="image/png" href="img/cityBG.jpg" />
 
@@ -23,10 +23,12 @@
 
 
 <style>
+    html {
+  scroll-behavior: smooth;
+}
         body {
             background: rgba(40, 49, 62, 0.9);
             background-repeat: no-repeat;
-            background-image: url(img/cityBG.jpg);
             background-attachment: fixed;
             background-size: cover;
         }
@@ -36,6 +38,7 @@
 </head>
 
 <body>
+    <button onclick="topFunction()" href="index.html" id="myBtn" class="fa fa-angle-up" title="Go to top"></button>
 
     <!-- Begin Header 
     <header>
@@ -53,9 +56,9 @@
         <nav id="main-nav">
             <ul>
                 <li><a class="active" href="index.html">Home</a></li><!--
-                --><li><a href="projecten.html">Projecten</a></li><!--
-                --><li><a href="#">Leeruitkomsten</a></li><!--
-                --><li><a href="#">Over mij</a></li>
+                --><li><a href="#div-title">Projecten</a></li><!--
+                --><li><a href="leeruitkomsten.html">Leeruitkomsten</a></li><!--
+                --><li><a href="#about">Over mij</a></li>
             </ul>
         </nav>
     </div>
@@ -63,16 +66,83 @@
 
     <main id="container">
         <header id="header-content">
-        <div id="linkerhelft">
-    <img src="img/foto-ikke.png" class="header-img">
+        <div id="linkerhelft2">
+    <img src="img/foto-ikke.png" class="header-img3">
         </div>
 <div id="rechterhelft">
     <h1 id="header-txt">Jorian</h1>
     <h3 id="header-txt2">Portfolio</h3>
+    <a href="#div-title"><button id="btnwork">Mijn Werk</button></a>
 </div>
 </header>
-
         <div class="black-line"></div>
+        <div class="article">
+        <div id="div-title"><h1 id="title-txt">Projecten</h1></div>
+
+        <div class="witruimte"></div>
+
+        <div class="flex-container">
+            <div class="flex-item">
+                <a href="Sprint0.html"><img src="img/fontys logo esports geen bg nieuw.png" class="flex-img"></a>
+                <p class="vtext">Sprint 0</p>
+            </div>
+            <div class="flex-item">
+                <a href="Sprint1.html"><img src="img/Logo-McDonalds.png" class="flex-img"></a>
+                <p class="vtext">Sprint 1</p>
+            </div>
+            <div class="flex-item">
+                <a href="Sprint2.html"><img src="img/Logo McJukebox.png" class="flex-img"></a>
+                <p class="vtext">Sprint 2</p>
+            </div>
+            <div class="flex-item">
+                <a href="Sprint2.html"><img src="img/cover mcpodcast.jpg" class="flex-img5"></a>
+                <p class="vtext">Sprint 3</p>
+            </div>
+            <div class="flex-item">
+                <a href="Projext-X.html"><img src="img/Cinema-4D-Logo.png" class="flex-img5"></a>
+                <p class="vtext">Project X</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="black-line2"></div>
+
+    <h1 id="title-txt">Over Mij</h1>
+
+    <div class="witruimte"></div>
+    <div class="witruimte"></div>
+
+    <div id="about">
+    <h3 id="about-txt">Ik ben Jorian Bracke, ik ben 18 jaar oud en ik doe de opleiding HBO ICT op Fontys Hogescholen in Tilburg, Ik heb voor deze opleiding gekozen omdat ik het erg leuk vind om met computers te werken en om te designen. Daarom heb ik ook gekozen voor Media Design.
+        Voor ik naar Fontys ging heb ik 5 jaar havo gedaan op het Norbertus College in Roosendaal. Daar heb ik het profiel Economie en Maatschappij gevolgd met Duits en Informatica en toen merkte in bijvoorbeeld dat ik het erg leuk vond om websites te maken.
+        In mijn vrije tijd vind ik het erg leuk om te gamen, te voetballen, beats te maken en om te chillen met vrienden. Ook vind ik het leuk om met applicaties zoals Adobe Photoshop of Cinema 4D te werken.</h3>
+        </div>
     </main>
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+
+        //andere tab
+        window.onblur = function () { document.title = 'Joehoe, kom eens terug!'; }
+        window.onfocus = function () { document.title = 'Portfolio Jorian Bracke'; }
+        </script>
 
 </body></html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registreer</title>
+
+       <!-- Begin Links -->
+       <link rel="stylesheet" type="text/css" href="css/style.css">
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+       <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+       <link rel="icon" type="image/png" href="img/mclogopng.png" />
+   
+       <!-- Einde Links -->
+</head>
+<body>
+    <div id="menu-container">
+    <div id="bg-nav">
+        <a href="index.html">
+            <img src="img/mclogosmall2.jpg" class="toplogo" href="index.html">
+        </a>
+        </div>
+        <div id="menu">
+            <nav id="login-nav">
+                <ul>
+                    <li><a href="login.html"><i class="fa fa-user"></i> Log In</span></a></li><!--
+                    --><li><a class="activeKlein" href="register.html">Registreer</a></li>
+                </ul>
+            </nav>
+            <nav id="boven-nav">
+                <ul>
+                    <li><a class="active" href="app.html">App</a></li><!--
+                    --><li><a href="nieuwsbrief.html">Nieuwsbrief</a></li>
+                </ul>
+            </nav>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html"> Home <i class="fa fa-chevron-down"></i></span></a></li><!--
+                --><li><a href="#div-title">McDonald's Podcast</a></li><!--
+                --><li><a href="#div-title">McMusic</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<div class="witruimte"></div>
+
+<h1 class="header-title">Registreer</h1>
+<div class="witruimte"></div>
+<div class="content-container">
+
+    <div id="absoluteCenteredDiv2">
+        <form action="index.html" method="post">
+            <div class="box2">
+                <div class="miniWitruimte"></div>
+                <p class="login-title" href="#">Voornaam</p>
+                <input class="username" name="firstname" type="text" placeholder="Voornaam">
+                <div class="miniWitruimte"></div>
+                <p class="login-title" href="#">Achternaam</p>
+                <input class="username" name="lastname" type="text" placeholder="Achternaam">
+                <div class="miniWitruimte"></div>
+                <p class="login-title" href="#">Email</p>
+                <input class="username" name="email" type="text" placeholder="Email">  
+                <div class="miniWitruimte"></div>
+                <p class="login-title" href="#">Gebruikersnaam</p>
+                <input class="username" name="username" type="text" placeholder="Gebruikersnaam">
+                <div class="miniWitruimte"></div>
+                <p class="login-title" href="#">Wachtwoord</p>
+                <input id="password" name="password" type="password" placeholder="Wachtwoord" required> 
+                <i class="fa fa-eye" id="togglePassword"></i> 
+                <div class="miniWitruimte"></div>
+                <p class="login-title" href="#">Bevestig Wachtwoord</p>
+                <input id="password2" name="password" type="password" placeholder="Bevestig Wachtwoord" required>
+                <i class="fa fa-eye" id="togglePassword2"></i>                 
+            </div>
+            <div class="miniWitruimte"></div>
+            <button type="submit" id="submit">Submit</button>
+            <input type="button" id="btnSubmit" value="Submit" onclick="return Validate()" />
+            <p href="#"><div class="button" onclick="return validatePassword()">Registreer</div></p>
+            <p class="extLoginTxt" href="#">------ Of ------</p>
+            <div class="miniWitruimte"></div>
+            <div class="miniWitruimte"></div>
+            <div class="extLogin">
+                <div href="#" class="btn-google">
+                    <img class="googleimg" src="img/icon-google.png" alt="GOOGLE">  
+                </div>
+                <div href="#" class="btn-fb">
+                    <img class="fbimg" src="img/logo-social-fb-facebook-icon.png" alt="GOOGLE">  
+                </div>
+            </div>
+            <div class="miniWitruimte"></div>
+            <div class="miniWitruimte"></div>
+            <p class="extLoginTxt" href="#">Al een account?</p>
+            <div class="miniWitruimte"></div>
+            <p class="regTxt" href="login.html">Login</p>
+        </form>
+    </div>  
+
+<div class="witruimte"></div>
+<div class="witruimte"></div>
+<div class="witruimte"></div>
+    
+<script src="js/app.js"></script>
+<script src="js/pass.js"></script>
+
+</body>
+</html>
